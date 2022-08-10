@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pertemuan09A1</string>
+    <string name="user_name">User Name</string>
+    <string name="masukkan_username">Masukkan username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="masukkan_password">Masukkan Password</string>
+    <string name="email">Email</string>
+    <string name="masukkan_alamat_email">Masukkan alamat email</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="masukkan_nama">Masukkan nama</string>
+    <string name="asal_sekolah">Asal Sekolah</string>
+    <string name="masukkan_asal_sekolah">Masukkan Asal Sekolah</string>
+    <string name="alamat_tinggal">Alamat Tinggal</string>
+    <string name="masukkan_alamat_tinggal">Masukkan Alamat Tinggal</string>
+    <string name="simpan">Simpan</string>
+</resources>
