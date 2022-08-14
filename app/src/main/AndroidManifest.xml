@@ -11,10 +11,11 @@
         android:theme="@style/Theme.Pertemuan09A1">
         <activity
             android:name=".RegisterActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:parentActivityName=".LoginActivity"/>
         <activity
             android:name=".LoginActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
@@ -26,7 +27,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="true">
 
         </activity>
     </application>

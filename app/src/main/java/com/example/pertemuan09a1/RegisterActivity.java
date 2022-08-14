@@ -1,8 +1,12 @@
 package com.example.pertemuan09a1;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NavUtils;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,6 +46,11 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
+
+        //menampilkan up button
+        assert getSupportActionBar() != null;
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     public boolean isValidation(){
@@ -79,6 +88,26 @@ public class RegisterActivity extends AppCompatActivity {
         }
 
         Toast.makeText(this, "Register berhasil", Toast.LENGTH_SHORT).show();
-        onBackPressed();
+
+    }
+
+    //cara yang seharusnya lebih elegan, tapi entah kenapa tidak berhasil
+//    @Override
+//    public boolean onSupportNavigateUp() {
+//        onBackPressed();
+//        finish();
+//        return true;
+//    }
+
+    //cara yang kurang elegan untuk action up
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                Intent intent = new Intent(this, LoginActivity.class);
+                startActivity(intent);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
